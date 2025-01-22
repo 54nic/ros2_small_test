@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/home/zhy/ckyf/ros2/my_workspace/src/my_msgs':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/zhy/ckyf/ros2/my_workspace/build/my_msgs/test_results/my_msgs/lint_cmake.xunit.xml
+
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/zhy/ckyf/ros2/my_workspace/build/my_msgs/test_results/my_msgs/lint_cmake.xunit.xml'

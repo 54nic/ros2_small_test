@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="my_package.xmllint"
+  tests="1"
+  errors="0"
+  failures="1"
+  time="0.620"
+>
+  <testcase
+    name="package.xml"
+    classname="my_package.xmllint"
+  >
+      <failure message="Diff with 289 lines"><![CDATA[/home/zhy/ckyf/ros2/my_workspace/src/my_package/package.xml:21: element test_depend: Schemas validity error : Element 'test_depend': This element is not expected. Expected is one of ( member_of_group, export ).
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/package.xml fails to validate
+]]></failure>
+  </testcase>
+  <system-out>Checked files:
+* package.xml</system-out>
+</testsuite>

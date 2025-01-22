@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="my_package.lint_cmake"
+  tests="90"
+  errors="0"
+  failures="80"
+  time="0.019"
+>
+  <testcase
+    name="CMakeLists.txt"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="cmake-build-debug/CTestCustom.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="whitespace/eol (cmake-build-debug/CTestTestfile.cmake:1)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Line ends in whitespace"/>
+  </testcase>
+  <testcase
+    name="whitespace/eol (cmake-build-debug/CTestTestfile.cmake:4)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Line ends in whitespace"/>
+  </testcase>
+  <testcase
+    name="whitespace/eol (cmake-build-debug/CTestTestfile.cmake:5)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Line ends in whitespace"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:7)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:8)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:9)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:11)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:12)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:13)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CTestTestfile.cmake:14)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:13)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:46)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:51)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:53)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:54)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:56)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:58)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:60)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:61)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:62)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:70)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:74)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:78)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:82)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:86)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:90)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:94)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:98)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:102)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:106)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:110)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:114)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:118)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:122)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:126)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/cmake_install.cmake:130)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/cmake_install.cmake:137)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:154)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (cmake-build-debug/cmake_install.cmake:156)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <testcase
+    name="cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/Makefile.cmake:8)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/Makefile.cmake:692)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/Makefile.cmake:698)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/Makefile.cmake:724)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake:78)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:12)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:13)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="whitespace/extra (cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:51)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Extra spaces between 'foreach' and its ()"/>
+  </testcase>
+  <testcase
+    name="whitespace/extra (cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:52)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Extra spaces between 'if' and its ()"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:90)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package.dir/DependInfo.cmake:6)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package.dir/DependInfo.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package.dir/DependInfo.cmake:16)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package.dir/DependInfo.cmake:20)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="cmake-build-debug/CMakeFiles/my_package.dir/cmake_clean.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package_uninstall.dir/DependInfo.cmake:6)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package_uninstall.dir/DependInfo.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package_uninstall.dir/DependInfo.cmake:14)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package_uninstall.dir/DependInfo.cmake:18)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/my_package_uninstall.dir/cmake_clean.cmake:6)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/uninstall.dir/DependInfo.cmake:6)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/uninstall.dir/DependInfo.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/uninstall.dir/DependInfo.cmake:14)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/uninstall.dir/DependInfo.cmake:18)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/CMakeFiles/uninstall.dir/cmake_clean.cmake:3)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="cmake-build-debug/ament_cmake_core/my_packageConfig-version.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="cmake-build-debug/ament_cmake_core/my_packageConfig.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/ament_cmake_core/package.cmake:7)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/mismatch (cmake-build-debug/ament_cmake_core/package.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="cmake-build-debug/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="cmake-build-debug/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake"
+    classname="my_package.lint_cmake"/>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:1)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:2)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:4)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:5)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:6)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:8)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:9)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:10)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:11)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:12)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:13)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="linelength (cmake-build-debug/ament_cmake_package_templates/templates.cmake:14)"
+    classname="my_package.lint_cmake"
+  >
+      <failure message="Lines should be &lt;= 140 characters long"/>
+  </testcase>
+  <testcase
+    name="cmake-build-debug/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake"
+    classname="my_package.lint_cmake"/>
+  <system-out>Checked files:
+* CMakeLists.txt
+* cmake-build-debug/CTestCustom.cmake
+* cmake-build-debug/CTestTestfile.cmake
+* cmake-build-debug/cmake_install.cmake
+* cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake
+* cmake-build-debug/CMakeFiles/Makefile.cmake
+* cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake
+* cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake
+* cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake
+* cmake-build-debug/CMakeFiles/my_package.dir/DependInfo.cmake
+* cmake-build-debug/CMakeFiles/my_package.dir/cmake_clean.cmake
+* cmake-build-debug/CMakeFiles/my_package_uninstall.dir/DependInfo.cmake
+* cmake-build-debug/CMakeFiles/my_package_uninstall.dir/cmake_clean.cmake
+* cmake-build-debug/CMakeFiles/uninstall.dir/DependInfo.cmake
+* cmake-build-debug/CMakeFiles/uninstall.dir/cmake_clean.cmake
+* cmake-build-debug/ament_cmake_core/my_packageConfig-version.cmake
+* cmake-build-debug/ament_cmake_core/my_packageConfig.cmake
+* cmake-build-debug/ament_cmake_core/package.cmake
+* cmake-build-debug/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake
+* cmake-build-debug/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake
+* cmake-build-debug/ament_cmake_package_templates/templates.cmake
+* cmake-build-debug/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake</system-out>
+</testsuite>

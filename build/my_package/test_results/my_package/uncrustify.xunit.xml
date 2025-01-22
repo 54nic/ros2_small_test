@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="my_package.uncrustify"
+  tests="5"
+  failures="5"
+  errors="0"
+  time="0.086"
+>
+  <testcase
+    name="cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c"
+    classname="my_package.uncrustify"
+  >
+      <failure message="Diff with 311 lines"><![CDATA[--- cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c
++++ cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c.uncrustify
+@@ -32 +32 @@
+-  /* __INTEL_COMPILER = VRP prior to 2021, and then VVVV for 2021 and later,
++/* __INTEL_COMPILER = VRP prior to 2021, and then VVVV for 2021 and later,
+@@ -35,2 +35,2 @@
+-#  define COMPILER_VERSION_MAJOR DEC(__INTEL_COMPILER/100)
+-#  define COMPILER_VERSION_MINOR DEC(__INTEL_COMPILER/10 % 10)
++#  define COMPILER_VERSION_MAJOR DEC(__INTEL_COMPILER / 100)
++#  define COMPILER_VERSION_MINOR DEC(__INTEL_COMPILER / 10 % 10)
+@@ -40 +40 @@
+-#   define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER   % 10)
++#   define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER % 10)
+@@ -45 +45 @@
+-   /* The third version component from --version is an update index,
++/* The third version component from --version is an update index,
+@@ -50 +50 @@
+-   /* __INTEL_COMPILER_BUILD_DATE = YYYYMMDD */
++/* __INTEL_COMPILER_BUILD_DATE = YYYYMMDD */
+@@ -54 +54 @@
+-   /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -83,3 +83,3 @@
+-# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER/100)
+-# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER    % 10)
++# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER / 100)
++# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER % 10)
+@@ -87,3 +87,3 @@
+-# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER/10000)
+-# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER/100 % 100)
+-# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER     % 100)
++# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER / 10000)
++# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER / 100 % 100)
++# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER % 100)
+@@ -92 +92 @@
+-  /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -118,3 +118,3 @@
+-# define COMPILER_VERSION_MAJOR HEX(__CODEGEARC_VERSION__>>24 & 0x00FF)
+-# define COMPILER_VERSION_MINOR HEX(__CODEGEARC_VERSION__>>16 & 0x00FF)
+-# define COMPILER_VERSION_PATCH DEC(__CODEGEARC_VERSION__     & 0xFFFF)
++# define COMPILER_VERSION_MAJOR HEX(__CODEGEARC_VERSION__ >> 24 & 0x00FF)
++# define COMPILER_VERSION_MINOR HEX(__CODEGEARC_VERSION__ >> 16 & 0x00FF)
++# define COMPILER_VERSION_PATCH DEC(__CODEGEARC_VERSION__ & 0xFFFF)
+@@ -124,2 +124,2 @@
+-  /* __BORLANDC__ = 0xVRR */
+-# define COMPILER_VERSION_MAJOR HEX(__BORLANDC__>>8)
++/* __BORLANDC__ = 0xVRR */
++# define COMPILER_VERSION_MAJOR HEX(__BORLANDC__ >> 8)
+@@ -130 +130 @@
+-   /* __WATCOMC__ = VVRR */
++/* __WATCOMC__ = VVRR */
+@@ -139 +139 @@
+-   /* __WATCOMC__ = VVRP + 1100 */
++/* __WATCOMC__ = VVRP + 1100 */
+@@ -149,4 +149,4 @@
+-   /* __SUNPRO_C = 0xVRRP */
+-#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C>>12)
+-#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C>>4 & 0xFF)
+-#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C    & 0xF)
++/* __SUNPRO_C = 0xVRRP */
++#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C >> 12)
++#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C >> 4 & 0xFF)
++#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C & 0xF)
+@@ -154,4 +154,4 @@
+-   /* __SUNPRO_CC = 0xVRP */
+-#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C>>8)
+-#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C>>4 & 0xF)
+-#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C    & 0xF)
++/* __SUNPRO_CC = 0xVRP */
++#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C >> 8)
++#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C >> 4 & 0xF)
++#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C & 0xF)
+@@ -162,4 +162,4 @@
+-  /* __HP_cc = VVRRPP */
+-# define COMPILER_VERSION_MAJOR DEC(__HP_cc/10000)
+-# define COMPILER_VERSION_MINOR DEC(__HP_cc/100 % 100)
+-# define COMPILER_VERSION_PATCH DEC(__HP_cc     % 100)
++/* __HP_cc = VVRRPP */
++# define COMPILER_VERSION_MAJOR DEC(__HP_cc / 10000)
++# define COMPILER_VERSION_MINOR DEC(__HP_cc / 100 % 100)
++# define COMPILER_VERSION_PATCH DEC(__HP_cc % 100)
+@@ -169,4 +169,4 @@
+-  /* __DECC_VER = VVRRTPPPP */
+-# define COMPILER_VERSION_MAJOR DEC(__DECC_VER/10000000)
+-# define COMPILER_VERSION_MINOR DEC(__DECC_VER/100000  % 100)
+-# define COMPILER_VERSION_PATCH DEC(__DECC_VER         % 10000)
++/* __DECC_VER = VVRRTPPPP */
++# define COMPILER_VERSION_MAJOR DEC(__DECC_VER / 10000000)
++# define COMPILER_VERSION_MINOR DEC(__DECC_VER / 100000 % 100)
++# define COMPILER_VERSION_PATCH DEC(__DECC_VER % 10000)
+@@ -176,4 +176,4 @@
+-  /* __IBMC__ = VRP */
+-# define COMPILER_VERSION_MAJOR DEC(__IBMC__/100)
+-# define COMPILER_VERSION_MINOR DEC(__IBMC__/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__IBMC__    % 10)
++/* __IBMC__ = VRP */
++# define COMPILER_VERSION_MAJOR DEC(__IBMC__ / 100)
++# define COMPILER_VERSION_MINOR DEC(__IBMC__ / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__IBMC__ % 10)
+@@ -199,4 +199,4 @@
+-  /* __IBMC__ = VRP */
+-# define COMPILER_VERSION_MAJOR DEC(__IBMC__/100)
+-# define COMPILER_VERSION_MINOR DEC(__IBMC__/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__IBMC__    % 10)
++/* __IBMC__ = VRP */
++# define COMPILER_VERSION_MAJOR DEC(__IBMC__ / 100)
++# define COMPILER_VERSION_MINOR DEC(__IBMC__ / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__IBMC__ % 10)
+@@ -206,4 +206,4 @@
+-  /* __IBMC__ = VRP */
+-# define COMPILER_VERSION_MAJOR DEC(__IBMC__/100)
+-# define COMPILER_VERSION_MINOR DEC(__IBMC__/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__IBMC__    % 10)
++/* __IBMC__ = VRP */
++# define COMPILER_VERSION_MAJOR DEC(__IBMC__ / 100)
++# define COMPILER_VERSION_MINOR DEC(__IBMC__ / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__IBMC__ % 10)
+@@ -242,4 +242,4 @@
+-  /* __TI_COMPILER_VERSION__ = VVVRRRPPP */
+-# define COMPILER_VERSION_MAJOR DEC(__TI_COMPILER_VERSION__/1000000)
+-# define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__/1000   % 1000)
+-# define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__        % 1000)
++/* __TI_COMPILER_VERSION__ = VVVRRRPPP */
++# define COMPILER_VERSION_MAJOR DEC(__TI_COMPILER_VERSION__ / 1000000)
++# define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__ / 1000 % 1000)
++# define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__ % 1000)
+@@ -277 +277 @@
+-# define COMPILER_VERSION_PATCH DEC(__GHS_VERSION_NUMBER      % 10)
++# define COMPILER_VERSION_PATCH DEC(__GHS_VERSION_NUMBER % 10)
+@@ -282 +282 @@
+-  # define COMPILER_VERSION_MAJOR DEC(__VERSION__/1000)
++  # define COMPILER_VERSION_MAJOR DEC(__VERSION__ / 1000)
+@@ -304,4 +304,4 @@
+-  /* __ARMCC_VERSION = VRRPPPP */
+-  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION/1000000)
+-  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION/10000 % 100)
+-  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION     % 10000)
++/* __ARMCC_VERSION = VRRPPPP */
++  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION / 1000000)
++  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION / 10000 % 100)
++  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION % 10000)
+@@ -309,4 +309,4 @@
+-  /* __ARMCC_VERSION = VRPPPP */
+-  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION/100000)
+-  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION/10000 % 10)
+-  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION    % 10000)
++/* __ARMCC_VERSION = VRPPPP */
++  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION / 100000)
++  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION / 10000 % 10)
++  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION % 10000)
+@@ -325 +325 @@
+-   /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -333,3 +333,3 @@
+-  # define COMPILER_VERSION_MAJOR DEC(__ARMCOMPILER_VERSION/1000000)
+-  # define COMPILER_VERSION_MINOR DEC(__ARMCOMPILER_VERSION/10000 % 100)
+-  # define COMPILER_VERSION_PATCH DEC(__ARMCOMPILER_VERSION/100   % 100)
++  # define COMPILER_VERSION_MAJOR DEC(__ARMCOMPILER_VERSION / 1000000)
++  # define COMPILER_VERSION_MINOR DEC(__ARMCOMPILER_VERSION / 10000 % 100)
++  # define COMPILER_VERSION_PATCH DEC(__ARMCOMPILER_VERSION / 100 % 100)
+@@ -354 +354 @@
+-   /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -387 +387 @@
+-  /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -392 +392 @@
+-    /* _MSC_FULL_VER = VVRRPPPPP */
++/* _MSC_FULL_VER = VVRRPPPPP */
+@@ -395 +395 @@
+-    /* _MSC_FULL_VER = VVRRPPPP */
++/* _MSC_FULL_VER = VVRRPPPP */
+@@ -406 +406 @@
+-  /* __VERSIONNUM__ = 0xVVRRPPTT */
++/* __VERSIONNUM__ = 0xVVRRPPTT */
+@@ -420 +420,3 @@
+-# elif defined(__VER__) && (defined(__ICCAVR__) || defined(__ICCRX__) || defined(__ICCRH850__) || defined(__ICCRL78__) || defined(__ICC430__) || defined(__ICCRISCV__) || defined(__ICCV850__) || defined(__ICC8051__) || defined(__ICCSTM8__))
++# elif defined(__VER__) && (defined(__ICCAVR__) || defined(__ICCRX__) || defined(__ICCRH850__) || \
++  defined(__ICCRL78__) || defined(__ICC430__) || defined(__ICCRISCV__) || defined(__ICCV850__) || \
++  defined(__ICC8051__) || defined(__ICCSTM8__))
+@@ -422 +424 @@
+-#  define COMPILER_VERSION_MINOR DEC((__VER__) - (((__VER__) / 100)*100))
++#  define COMPILER_VERSION_MINOR DEC((__VER__) -(((__VER__) / 100) * 100))
+@@ -434,4 +436,4 @@
+-  /* SDCC = VRP */
+-#  define COMPILER_VERSION_MAJOR DEC(SDCC/100)
+-#  define COMPILER_VERSION_MINOR DEC(SDCC/10 % 10)
+-#  define COMPILER_VERSION_PATCH DEC(SDCC    % 10)
++/* SDCC = VRP */
++#  define COMPILER_VERSION_MAJOR DEC(SDCC / 100)
++#  define COMPILER_VERSION_MINOR DEC(SDCC / 10 % 10)
++#  define COMPILER_VERSION_PATCH DEC(SDCC % 10)
+@@ -455 +457 @@
+-char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
++char const * info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+@@ -457 +459 @@
+-char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
++char const * info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
+@@ -461 +463 @@
+-char const* qnxnto = "INFO" ":" "qnxnto[]";
++char const * qnxnto = "INFO" ":" "qnxnto[]";
+@@ -465 +467 @@
+-char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
++char const * info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
+@@ -749,9 +751,9 @@
+-#define DEC(n)                   \
+-  ('0' + (((n) / 10000000)%10)), \
+-  ('0' + (((n) / 1000000)%10)),  \
+-  ('0' + (((n) / 100000)%10)),   \
+-  ('0' + (((n) / 10000)%10)),    \
+-  ('0' + (((n) / 1000)%10)),     \
+-  ('0' + (((n) / 100)%10)),      \
+-  ('0' + (((n) / 10)%10)),       \
+-  ('0' +  ((n) % 10))
++#define DEC(n) \
++  ('0' + (((n) / 10000000) % 10)), \
++  ('0' + (((n) / 1000000) % 10)), \
++  ('0' + (((n) / 100000) % 10)), \
++  ('0' + (((n) / 10000) % 10)), \
++  ('0' + (((n) / 1000) % 10)), \
++  ('0' + (((n) / 100) % 10)), \
++  ('0' + (((n) / 10) % 10)), \
++  ('0' + ((n) % 10))
+@@ -760,9 +762,9 @@
+-#define HEX(n)             \
+-  ('0' + ((n)>>28 & 0xF)), \
+-  ('0' + ((n)>>24 & 0xF)), \
+-  ('0' + ((n)>>20 & 0xF)), \
+-  ('0' + ((n)>>16 & 0xF)), \
+-  ('0' + ((n)>>12 & 0xF)), \
+-  ('0' + ((n)>>8  & 0xF)), \
+-  ('0' + ((n)>>4  & 0xF)), \
+-  ('0' + ((n)     & 0xF))
++#define HEX(n) \
++  ('0' + ((n) >> 28 & 0xF)), \
++  ('0' + ((n) >> 24 & 0xF)), \
++  ('0' + ((n) >> 20 & 0xF)), \
++  ('0' + ((n) >> 16 & 0xF)), \
++  ('0' + ((n) >> 12 & 0xF)), \
++  ('0' + ((n) >> 8 & 0xF)), \
++  ('0' + ((n) >> 4 & 0xF)), \
++  ('0' + ((n) & 0xF))
+@@ -772 +774 @@
+-char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";
++char const * info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";
+@@ -778 +780 @@
+-  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
++  'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o', 'n', '[',
+@@ -783 +785 @@
+-   '.', COMPILER_VERSION_PATCH,
++  '.', COMPILER_VERSION_PATCH,
+@@ -785 +787 @@
+-    '.', COMPILER_VERSION_TWEAK,
++  '.', COMPILER_VERSION_TWEAK,
+@@ -789 +791,2 @@
+-  ']','\0'};
++  ']', '\0'
++};
+@@ -796,3 +799,4 @@
+-  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','_',
+-  'i','n','t','e','r','n','a','l','[',
+-  COMPILER_VERSION_INTERNAL,']','\0'};
++  'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o', 'n', '_',
++  'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '[',
++  COMPILER_VERSION_INTERNAL, ']', '\0'
++};
+@@ -800 +804,2 @@
+-char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";
++char const * info_version_internal =
++  "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";
+@@ -807 +812 @@
+-  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
++  's', 'i', 'm', 'u', 'l', 'a', 't', 'e', '_', 'v', 'e', 'r', 's', 'i', 'o', 'n', '[',
+@@ -812 +817 @@
+-   '.', SIMULATE_VERSION_PATCH,
++  '.', SIMULATE_VERSION_PATCH,
+@@ -814 +819 @@
+-    '.', SIMULATE_VERSION_TWEAK,
++  '.', SIMULATE_VERSION_TWEAK,
+@@ -818 +823,2 @@
+-  ']','\0'};
++  ']', '\0'
++};
+@@ -825,3 +831,2 @@
+-char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+-char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+-
++char const * info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
++char const * info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+@@ -856 +861 @@
+-const char* info_language_standard_default =
++const char * info_language_standard_default =
+@@ -859,3 +864,3 @@
+-const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+-#if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \
+-     defined(__TI_COMPILER_VERSION__)) &&                                     \
++const char * info_language_extensions_default = "INFO" ":" "extensions_default["
++#if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) || \
++  defined(__TI_COMPILER_VERSION__)) && \
+@@ -867 +872 @@
+-"]";
++  "]";
+@@ -875 +880 @@
+-int main(argc, argv) int argc; char *argv[];
++int main(argc, argv) int argc; char * argv[];
+@@ -877 +882 @@
+-int main(int argc, char* argv[])
++int main(int argc, char * argv[])
+]]></failure>
+  </testcase>
+  <testcase
+    name="cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+    classname="my_package.uncrustify"
+  >
+      <failure message="Diff with 300 lines"><![CDATA[--- cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp
++++ cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp.uncrustify
+@@ -26 +26 @@
+-  /* __INTEL_COMPILER = VRP prior to 2021, and then VVVV for 2021 and later,
++/* __INTEL_COMPILER = VRP prior to 2021, and then VVVV for 2021 and later,
+@@ -29,2 +29,2 @@
+-#  define COMPILER_VERSION_MAJOR DEC(__INTEL_COMPILER/100)
+-#  define COMPILER_VERSION_MINOR DEC(__INTEL_COMPILER/10 % 10)
++#  define COMPILER_VERSION_MAJOR DEC(__INTEL_COMPILER / 100)
++#  define COMPILER_VERSION_MINOR DEC(__INTEL_COMPILER / 10 % 10)
+@@ -34 +34 @@
+-#   define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER   % 10)
++#   define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER % 10)
+@@ -39 +39 @@
+-   /* The third version component from --version is an update index,
++/* The third version component from --version is an update index,
+@@ -44 +44 @@
+-   /* __INTEL_COMPILER_BUILD_DATE = YYYYMMDD */
++/* __INTEL_COMPILER_BUILD_DATE = YYYYMMDD */
+@@ -48 +48 @@
+-   /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -77,3 +77,3 @@
+-# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER/100)
+-# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER    % 10)
++# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER / 100)
++# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER % 10)
+@@ -81,3 +81,3 @@
+-# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER/10000)
+-# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER/100 % 100)
+-# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER     % 100)
++# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER / 10000)
++# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER / 100 % 100)
++# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER % 100)
+@@ -86 +86 @@
+-  /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -112,3 +112,3 @@
+-# define COMPILER_VERSION_MAJOR HEX(__CODEGEARC_VERSION__>>24 & 0x00FF)
+-# define COMPILER_VERSION_MINOR HEX(__CODEGEARC_VERSION__>>16 & 0x00FF)
+-# define COMPILER_VERSION_PATCH DEC(__CODEGEARC_VERSION__     & 0xFFFF)
++# define COMPILER_VERSION_MAJOR HEX(__CODEGEARC_VERSION__ >> 24 & 0x00FF)
++# define COMPILER_VERSION_MINOR HEX(__CODEGEARC_VERSION__ >> 16 & 0x00FF)
++# define COMPILER_VERSION_PATCH DEC(__CODEGEARC_VERSION__ & 0xFFFF)
+@@ -118,2 +118,2 @@
+-  /* __BORLANDC__ = 0xVRR */
+-# define COMPILER_VERSION_MAJOR HEX(__BORLANDC__>>8)
++/* __BORLANDC__ = 0xVRR */
++# define COMPILER_VERSION_MAJOR HEX(__BORLANDC__ >> 8)
+@@ -124 +124 @@
+-   /* __WATCOMC__ = VVRR */
++/* __WATCOMC__ = VVRR */
+@@ -133 +133 @@
+-   /* __WATCOMC__ = VVRP + 1100 */
++/* __WATCOMC__ = VVRP + 1100 */
+@@ -143,4 +143,4 @@
+-   /* __SUNPRO_CC = 0xVRRP */
+-#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>12)
+-#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xFF)
+-#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
++/* __SUNPRO_CC = 0xVRRP */
++#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC >> 12)
++#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC >> 4 & 0xFF)
++#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC & 0xF)
+@@ -148,4 +148,4 @@
+-   /* __SUNPRO_CC = 0xVRP */
+-#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>8)
+-#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xF)
+-#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
++/* __SUNPRO_CC = 0xVRP */
++#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC >> 8)
++#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC >> 4 & 0xF)
++#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC & 0xF)
+@@ -156,4 +156,4 @@
+-  /* __HP_aCC = VVRRPP */
+-# define COMPILER_VERSION_MAJOR DEC(__HP_aCC/10000)
+-# define COMPILER_VERSION_MINOR DEC(__HP_aCC/100 % 100)
+-# define COMPILER_VERSION_PATCH DEC(__HP_aCC     % 100)
++/* __HP_aCC = VVRRPP */
++# define COMPILER_VERSION_MAJOR DEC(__HP_aCC / 10000)
++# define COMPILER_VERSION_MINOR DEC(__HP_aCC / 100 % 100)
++# define COMPILER_VERSION_PATCH DEC(__HP_aCC % 100)
+@@ -163,4 +163,4 @@
+-  /* __DECCXX_VER = VVRRTPPPP */
+-# define COMPILER_VERSION_MAJOR DEC(__DECCXX_VER/10000000)
+-# define COMPILER_VERSION_MINOR DEC(__DECCXX_VER/100000  % 100)
+-# define COMPILER_VERSION_PATCH DEC(__DECCXX_VER         % 10000)
++/* __DECCXX_VER = VVRRTPPPP */
++# define COMPILER_VERSION_MAJOR DEC(__DECCXX_VER / 10000000)
++# define COMPILER_VERSION_MINOR DEC(__DECCXX_VER / 100000 % 100)
++# define COMPILER_VERSION_PATCH DEC(__DECCXX_VER % 10000)
+@@ -170,4 +170,4 @@
+-  /* __IBMCPP__ = VRP */
+-# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__/100)
+-# define COMPILER_VERSION_MINOR DEC(__IBMCPP__/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__IBMCPP__    % 10)
++/* __IBMCPP__ = VRP */
++# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__ / 100)
++# define COMPILER_VERSION_MINOR DEC(__IBMCPP__ / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__IBMCPP__ % 10)
+@@ -193,4 +193,4 @@
+-  /* __IBMCPP__ = VRP */
+-# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__/100)
+-# define COMPILER_VERSION_MINOR DEC(__IBMCPP__/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__IBMCPP__    % 10)
++/* __IBMCPP__ = VRP */
++# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__ / 100)
++# define COMPILER_VERSION_MINOR DEC(__IBMCPP__ / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__IBMCPP__ % 10)
+@@ -200,4 +200,4 @@
+-  /* __IBMCPP__ = VRP */
+-# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__/100)
+-# define COMPILER_VERSION_MINOR DEC(__IBMCPP__/10 % 10)
+-# define COMPILER_VERSION_PATCH DEC(__IBMCPP__    % 10)
++/* __IBMCPP__ = VRP */
++# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__ / 100)
++# define COMPILER_VERSION_MINOR DEC(__IBMCPP__ / 10 % 10)
++# define COMPILER_VERSION_PATCH DEC(__IBMCPP__ % 10)
+@@ -236,4 +236,4 @@
+-  /* __TI_COMPILER_VERSION__ = VVVRRRPPP */
+-# define COMPILER_VERSION_MAJOR DEC(__TI_COMPILER_VERSION__/1000000)
+-# define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__/1000   % 1000)
+-# define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__        % 1000)
++/* __TI_COMPILER_VERSION__ = VVVRRRPPP */
++# define COMPILER_VERSION_MAJOR DEC(__TI_COMPILER_VERSION__ / 1000000)
++# define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__ / 1000 % 1000)
++# define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__ % 1000)
+@@ -271 +271 @@
+-# define COMPILER_VERSION_PATCH DEC(__GHS_VERSION_NUMBER      % 10)
++# define COMPILER_VERSION_PATCH DEC(__GHS_VERSION_NUMBER % 10)
+@@ -276 +276 @@
+-  # define COMPILER_VERSION_MAJOR DEC(__VERSION__/1000)
++  # define COMPILER_VERSION_MAJOR DEC(__VERSION__ / 1000)
+@@ -292,4 +292,4 @@
+-  /* __ARMCC_VERSION = VRRPPPP */
+-  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION/1000000)
+-  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION/10000 % 100)
+-  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION     % 10000)
++/* __ARMCC_VERSION = VRRPPPP */
++  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION / 1000000)
++  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION / 10000 % 100)
++  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION % 10000)
+@@ -297,4 +297,4 @@
+-  /* __ARMCC_VERSION = VRPPPP */
+-  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION/100000)
+-  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION/10000 % 10)
+-  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION    % 10000)
++/* __ARMCC_VERSION = VRPPPP */
++  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION / 100000)
++  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION / 10000 % 10)
++  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION % 10000)
+@@ -313 +313 @@
+-   /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -321,3 +321,3 @@
+-  # define COMPILER_VERSION_MAJOR DEC(__ARMCOMPILER_VERSION/1000000)
+-  # define COMPILER_VERSION_MINOR DEC(__ARMCOMPILER_VERSION/10000 % 100)
+-  # define COMPILER_VERSION_PATCH DEC(__ARMCOMPILER_VERSION/100   % 100)
++  # define COMPILER_VERSION_MAJOR DEC(__ARMCOMPILER_VERSION / 1000000)
++  # define COMPILER_VERSION_MINOR DEC(__ARMCOMPILER_VERSION / 10000 % 100)
++  # define COMPILER_VERSION_PATCH DEC(__ARMCOMPILER_VERSION / 100 % 100)
+@@ -342 +342 @@
+-   /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -379 +379 @@
+-  /* _MSC_VER = VVRR */
++/* _MSC_VER = VVRR */
+@@ -384 +384 @@
+-    /* _MSC_FULL_VER = VVRRPPPPP */
++/* _MSC_FULL_VER = VVRRPPPPP */
+@@ -387 +387 @@
+-    /* _MSC_FULL_VER = VVRRPPPP */
++/* _MSC_FULL_VER = VVRRPPPP */
+@@ -398 +398 @@
+-  /* __VERSIONNUM__ = 0xVVRRPPTT */
++/* __VERSIONNUM__ = 0xVVRRPPTT */
+@@ -412 +412,3 @@
+-# elif defined(__VER__) && (defined(__ICCAVR__) || defined(__ICCRX__) || defined(__ICCRH850__) || defined(__ICCRL78__) || defined(__ICC430__) || defined(__ICCRISCV__) || defined(__ICCV850__) || defined(__ICC8051__) || defined(__ICCSTM8__))
++# elif defined(__VER__) && (defined(__ICCAVR__) || defined(__ICCRX__) || defined(__ICCRH850__) || \
++  defined(__ICCRL78__) || defined(__ICC430__) || defined(__ICCRISCV__) || defined(__ICCV850__) || \
++  defined(__ICC8051__) || defined(__ICCSTM8__))
+@@ -414 +416 @@
+-#  define COMPILER_VERSION_MINOR DEC((__VER__) - (((__VER__) / 100)*100))
++#  define COMPILER_VERSION_MINOR DEC((__VER__) -(((__VER__) / 100) * 100))
+@@ -434 +436 @@
+-char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
++char const * info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+@@ -436 +438 @@
+-char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
++char const * info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
+@@ -440 +442 @@
+-char const* qnxnto = "INFO" ":" "qnxnto[]";
++char const * qnxnto = "INFO" ":" "qnxnto[]";
+@@ -444 +446 @@
+-char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
++char const * info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
+@@ -728,9 +730,9 @@
+-#define DEC(n)                   \
+-  ('0' + (((n) / 10000000)%10)), \
+-  ('0' + (((n) / 1000000)%10)),  \
+-  ('0' + (((n) / 100000)%10)),   \
+-  ('0' + (((n) / 10000)%10)),    \
+-  ('0' + (((n) / 1000)%10)),     \
+-  ('0' + (((n) / 100)%10)),      \
+-  ('0' + (((n) / 10)%10)),       \
+-  ('0' +  ((n) % 10))
++#define DEC(n) \
++  ('0' + (((n) / 10000000) % 10)), \
++  ('0' + (((n) / 1000000) % 10)), \
++  ('0' + (((n) / 100000) % 10)), \
++  ('0' + (((n) / 10000) % 10)), \
++  ('0' + (((n) / 1000) % 10)), \
++  ('0' + (((n) / 100) % 10)), \
++  ('0' + (((n) / 10) % 10)), \
++  ('0' + ((n) % 10))
+@@ -739,9 +741,9 @@
+-#define HEX(n)             \
+-  ('0' + ((n)>>28 & 0xF)), \
+-  ('0' + ((n)>>24 & 0xF)), \
+-  ('0' + ((n)>>20 & 0xF)), \
+-  ('0' + ((n)>>16 & 0xF)), \
+-  ('0' + ((n)>>12 & 0xF)), \
+-  ('0' + ((n)>>8  & 0xF)), \
+-  ('0' + ((n)>>4  & 0xF)), \
+-  ('0' + ((n)     & 0xF))
++#define HEX(n) \
++  ('0' + ((n) >> 28 & 0xF)), \
++  ('0' + ((n) >> 24 & 0xF)), \
++  ('0' + ((n) >> 20 & 0xF)), \
++  ('0' + ((n) >> 16 & 0xF)), \
++  ('0' + ((n) >> 12 & 0xF)), \
++  ('0' + ((n) >> 8 & 0xF)), \
++  ('0' + ((n) >> 4 & 0xF)), \
++  ('0' + ((n) & 0xF))
+@@ -751 +753 @@
+-char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";
++char const * info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";
+@@ -757 +759 @@
+-  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
++  'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o', 'n', '[',
+@@ -762 +764 @@
+-   '.', COMPILER_VERSION_PATCH,
++  '.', COMPILER_VERSION_PATCH,
+@@ -764 +766 @@
+-    '.', COMPILER_VERSION_TWEAK,
++  '.', COMPILER_VERSION_TWEAK,
+@@ -768 +770 @@
+-  ']','\0'};
++  ']', '\0'};
+@@ -775,3 +777,3 @@
+-  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','_',
+-  'i','n','t','e','r','n','a','l','[',
+-  COMPILER_VERSION_INTERNAL,']','\0'};
++  'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_', 'v', 'e', 'r', 's', 'i', 'o', 'n', '_',
++  'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '[',
++  COMPILER_VERSION_INTERNAL, ']', '\0'};
+@@ -779 +781,2 @@
+-char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";
++char const * info_version_internal =
++  "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";
+@@ -786 +789 @@
+-  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
++  's', 'i', 'm', 'u', 'l', 'a', 't', 'e', '_', 'v', 'e', 'r', 's', 'i', 'o', 'n', '[',
+@@ -791 +794 @@
+-   '.', SIMULATE_VERSION_PATCH,
++  '.', SIMULATE_VERSION_PATCH,
+@@ -793 +796 @@
+-    '.', SIMULATE_VERSION_TWEAK,
++  '.', SIMULATE_VERSION_TWEAK,
+@@ -797 +800 @@
+-  ']','\0'};
++  ']', '\0'};
+@@ -804,3 +807,2 @@
+-char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+-char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+-
++char const * info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
++char const * info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+@@ -864 +866 @@
+-const char* info_language_standard_default = "INFO" ":" "standard_default["
++const char * info_language_standard_default = "INFO" ":" "standard_default["
+@@ -880,5 +882,5 @@
+-"]";
+-
+-const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+-#if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \
+-     defined(__TI_COMPILER_VERSION__)) &&                                     \
++  "]";
++
++const char * info_language_extensions_default = "INFO" ":" "extensions_default["
++#if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) || \
++  defined(__TI_COMPILER_VERSION__)) && \
+@@ -890 +892 @@
+-"]";
++  "]";
+@@ -894 +896 @@
+-int main(int argc, char* argv[])
++int main(int argc, char * argv[])
+]]></failure>
+  </testcase>
+  <testcase
+    name="include/my_package/my_node.h"
+    classname="my_package.uncrustify"
+  >
+      <failure message="Diff with 30 lines"><![CDATA[--- include/my_package/my_node.h
++++ include/my_package/my_node.h.uncrustify
+@@ -13,13 +13,14 @@
+-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr string_publisher_;
+-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr timer_publisher_;
+-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr string_subscription_;
+-    rclcpp::TimerBase::SharedPtr timer_;
+-    rclcpp::Publisher<my_msgs::msg::My>::SharedPtr my_message_publisher_;
+-    rclcpp::Subscription<my_msgs::msg::My>::SharedPtr my_message_subscription_;
+-    int cnt_ = 0;
+-  public:
+-    my_node() ;
+-    my_node(const rclcpp::NodeOptions &options);
+-    void subscription_callback(std_msgs::msg::String::SharedPtr msg);
+-    void timer_callback();
+-    void my_message_callback(my_msgs::msg::My::SharedPtr msg);
++  rclcpp::Publisher < std_msgs::msg::String > ::SharedPtr string_publisher_;
++  rclcpp::Publisher < std_msgs::msg::String > ::SharedPtr timer_publisher_;
++  rclcpp::Subscription < std_msgs::msg::String > ::SharedPtr string_subscription_;
++  rclcpp::TimerBase::SharedPtr timer_;
++  rclcpp::Publisher < my_msgs::msg::My > ::SharedPtr my_message_publisher_;
++  rclcpp::Subscription < my_msgs::msg::My > ::SharedPtr my_message_subscription_;
++  int cnt_ = 0;
++
++public:
++  my_node();
++  my_node(const rclcpp::NodeOptions & options);
++  void subscription_callback(std_msgs::msg::String::SharedPtr msg);
++  void timer_callback();
++  void my_message_callback(my_msgs::msg::My::SharedPtr msg);
+]]></failure>
+  </testcase>
+  <testcase
+    name="src/main.cpp"
+    classname="my_package.uncrustify"
+  >
+      <failure message="Diff with 6 lines"><![CDATA[--- src/main.cpp
++++ src/main.cpp.uncrustify
+@@ -8 +8,2 @@
+-int main(int argc, const char * argv[]) {
++int main(int argc, const char * argv[])
++{
+]]></failure>
+  </testcase>
+  <testcase
+    name="src/my_node.cpp"
+    classname="my_package.uncrustify"
+  >
+      <failure message="Diff with 84 lines"><![CDATA[--- src/my_node.cpp
++++ src/my_node.cpp.uncrustify
+@@ -10,4 +10,7 @@
+-my_node::my_node() : my_node(rclcpp::NodeOptions()){}
+-my_node::my_node(const rclcpp::NodeOptions& options): Node("my_node", options) {
+-    RCLCPP_INFO(get_logger(), "init");
+-    string_subscription_ = create_subscription<std_msgs::msg::String>(
++my_node::my_node()
++: my_node(rclcpp::NodeOptions()) {}
++my_node::my_node(const rclcpp::NodeOptions & options)
++: Node("my_node", options)
++{
++  RCLCPP_INFO(get_logger(), "init");
++  string_subscription_ = create_subscription<std_msgs::msg::String>(
+@@ -17,2 +20,2 @@
+-    );
+-    string_publisher_ = create_publisher<std_msgs::msg::String>(
++  );
++  string_publisher_ = create_publisher<std_msgs::msg::String>(
+@@ -21,2 +24,2 @@
+-    );
+-    timer_publisher_ = create_publisher<std_msgs::msg::String>(
++  );
++  timer_publisher_ = create_publisher<std_msgs::msg::String>(
+@@ -25,2 +28,2 @@
+-    );
+-    timer_ = create_wall_timer(
++  );
++  timer_ = create_wall_timer(
+@@ -30 +33 @@
+-    my_message_publisher_ = create_publisher<my_msgs::msg::My>(
++  my_message_publisher_ = create_publisher<my_msgs::msg::My>(
+@@ -33,2 +36,2 @@
+-    );
+-    my_message_subscription_ = create_subscription<my_msgs::msg::My>(
++  );
++  my_message_subscription_ = create_subscription<my_msgs::msg::My>(
+@@ -37,2 +40,2 @@
+-    std::bind(&my_node::my_message_callback,this,std::placeholders::_1)
+-    );
++    std::bind(&my_node::my_message_callback, this, std::placeholders::_1)
++  );
+@@ -40,5 +43,6 @@
+-void my_node::subscription_callback(const std_msgs::msg::String::SharedPtr msg) {
+-    auto message = std_msgs::msg::String();
+-    message.data = "I can hear:" + msg->data;
+-    RCLCPP_INFO(get_logger(), "I hear %s", msg->data.c_str());
+-    string_publisher_->publish(message);
++void my_node::subscription_callback(const std_msgs::msg::String::SharedPtr msg)
++{
++  auto message = std_msgs::msg::String();
++  message.data = "I can hear:" + msg->data;
++  RCLCPP_INFO(get_logger(), "I hear %s", msg->data.c_str());
++  string_publisher_->publish(message);
+@@ -48,10 +52,10 @@
+-    RCLCPP_INFO(get_logger(), "%d s", ++cnt_);
+-    auto time_msg = std_msgs::msg::String();
+-    time_msg.data = "Now is " + std::to_string(cnt_);
+-    timer_publisher_->publish(time_msg);
+-    auto self_msg = my_msgs::msg::My();
+-    self_msg.header = std_msgs::msg::Header();
+-    self_msg.id = 1;
+-    self_msg.yaw = 123.45;
+-    self_msg.detect_success = true;
+-    my_message_publisher_->publish(self_msg);
++  RCLCPP_INFO(get_logger(), "%d s", ++cnt_);
++  auto time_msg = std_msgs::msg::String();
++  time_msg.data = "Now is " + std::to_string(cnt_);
++  timer_publisher_->publish(time_msg);
++  auto self_msg = my_msgs::msg::My();
++  self_msg.header = std_msgs::msg::Header();
++  self_msg.id = 1;
++  self_msg.yaw = 123.45;
++  self_msg.detect_success = true;
++  my_message_publisher_->publish(self_msg);
+@@ -59 +63 @@
+-    }
++}
+@@ -62,2 +66,3 @@
+-    RCLCPP_INFO(get_logger(),"id %d , yaw %f , detect_success %d",msg->id,msg->yaw,msg->detect_success);
+-}+  RCLCPP_INFO(
++    get_logger(), "id %d , yaw %f , detect_success %d", msg->id, msg->yaw, msg->detect_success);
++}
+]]></failure>
+  </testcase>
+  <system-out>Checked files:
+* cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c
+* cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp
+* include/my_package/my_node.h
+* src/main.cpp
+* src/my_node.cpp</system-out>
+</testsuite>
