@@ -1,0 +1,10 @@
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/uninstall.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/my_package_uninstall.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/my_package.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/test.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/install.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/install/local.dir
+/home/zhy/ckyf/ros2/my_workspace/src/my_package/cmake-build-debug/CMakeFiles/install/strip.dir
